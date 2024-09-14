@@ -7,10 +7,12 @@ class PurchaseIn(BaseModel):
     item: str
     price: float
 
+
 class ReportIn(BaseModel):
     id: int
     title: str
     status: str
+
 
 class UserIn(BaseModel):
     name: str

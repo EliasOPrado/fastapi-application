@@ -1,4 +1,7 @@
-# FastAPI - Tasks todo 📝
+# FastAPI Application
+
+Link:
+http://localhost:8000/docs
 
 ### How to run the application:
 If you have docker installed just run the following command:
@@ -22,38 +25,14 @@ uvicorn main:app --reload
 ```
 ps: remember you should be in the root directory to run this command. 
 
-### The CRUD operations
+### Operations
 
 There are all the CRUD opertions as:
-1. `/tasks/` Read all (GET)
-2. `/tasks/` Create Todo (POST)
-3. `/tasks/{todo_id}` Read Todo (GET)
-4. `/tasks/{todo_id}` Update Todo (PUT)
-5. `/tasks/{todo_id}` Patch Todo (PATCH)
-6. `/tasks/{todo_id}` Delete Todo (DELETE)
-
-For the endpoints above the payload is as follow:
-```json
-{
-  "title": "string",
-  "description": "string",
-  "completed": true
-}
-```
-
-### Tests
-
-There have tests for all endpoints and database integration using `pytest`.
-
-To check the functionalities, with the `requirements.txt` installed just write:
-```bash
-pytes -s
-```
-
-To check the tests just go to `test/`.
-
-
-
-### Deployment
-
-This service was deployed using `render.com` using docker and a postgres database created on `AWS RDS`.
+1. `/api/fetch-user/` (POST)
+2. `/api/fetch-admin/` (POST)
+3. `/api/users/` Read all users (GET)
+4. `/api/users/{user_id}` Get user (GET)
+5. `/api/purchases/` Read all purchases (GET)
+6. `/api/purchases/{purchase_id}` Get purchase (GET)
+5. `/api/reports/` Read all reports (GET)
+6. `/api/reports/{report_id}` Get report (GET)
