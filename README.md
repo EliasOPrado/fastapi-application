@@ -3,6 +3,9 @@
 Link:
 http://localhost:8000/docs
 
+### Before everything:
+- Bear in mind you need one `.env` file to run the application. With user and admin password. Therefore, there is a `contrib/` folder that you can see how your `.env`should be. 
+
 ### How to run the application:
 If you have docker installed just run the following command:
 ```bash
