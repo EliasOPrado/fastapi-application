@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fastapi_app
+    ports:
+      - "8000:80"  
+    environment:
+      - ENV=development 
+      - .:/code  
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
